@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Game</title>
+	<!-- CSS Reset Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- Footer Bootstrap CDN -->
+	<link href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
+	<!-- Main Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+	<!-- Main CSS Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Google Fonts CDN -->
+	<link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Fondamento" rel="stylesheet">
+
+</head>
+<body>	
+	<h1>The Crystal Game</h1>
+	<img id="example-img" src="assets/images/example.jpg" alt="Example Crystal">
+	<ul id="instructions">
+		<li>- Press the crystals to add <br>&nbsp;&nbsp;&nbsp;
+			a number to the counter</li>
+		<li>- Match the counter to the <br>&nbsp;&nbsp;&nbsp;
+			target number to win!</li>
+	</ul>
+	<div id="flex-box">
+		<div id="game-text">
+			<ul class="game-list">
+				<li>Wins:</li>
+				<li>Losses:</li>
+				<li>Target:
+				<li>Counter:</li>
+			</ul>
+		</div>
+		<div id="game-data">
+			<ul class="game-list">
+				<li id="wins">-</li>
+				<li id="losses">-</li>
+				<li id="guess-count">0</li>
+			</ul>
+		</div>
+	</div>
+	<div id="crystal-div">
+		<img src="assets/images/example.jpg" alt="Example Crystal" width="50" height="50">
+		<img src="assets/images/example.jpg" alt="Example Crystal" width="50" height="50">
+	</div>
+	<div id="crystal-div">
+		<img src="assets/images/example.jpg" alt="Example Crystal" width="50" height="50">
+		<img src="assets/images/example.jpg" alt="Example Crystal" width="50" height="50">
+	</div>
+	
+	<br>
+	<div class="text-center">
+	<button type="button" class="btn btn-default" id="refresh-btn">Refresh</button>
+	</div>
+	<br><br><br><br><br>
+
+    <footer class="footer">
+    	<div class="container text-center">
+    		<span class="col-xs-12 text-nowrap">© Copywrite 2017 Victor Fisher</span>
+    	</div>
+    </footer>
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
