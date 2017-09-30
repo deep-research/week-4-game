@@ -11,18 +11,18 @@
 	<!-- Main Bootstrap CDN -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
-	<!-- Main CSS Stylesheet -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<!-- Google Fonts CDN -->
 	<link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Fondamento" rel="stylesheet">
 
+	<!-- Main CSS Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>	
-	<h1>The Crystal Game</h1>
+	<h1 class="the-title">The Crystal Game</h1>
 	<img id="example-img" src="assets/images/example.jpg" alt="Example Crystal">
 	<ul id="instructions">
 		<li>- Press the crystals to add <br>&nbsp;&nbsp;&nbsp;
-			a number to the counter</li>
+			a value to the counter</li>
 		<li>- Match the counter to the <br>&nbsp;&nbsp;&nbsp;
 			target number to win!</li>
 	</ul>
@@ -39,20 +39,21 @@
 			<ul class="game-list">
 				<li id="wins">-</li>
 				<li id="losses">-</li>
-				<li id="guess-count">0</li>
+				<li id="target">-</li>
+				<li id="counter">-</li>
 			</ul>
 		</div>
 	</div>
-	<div id="crystal-div">
-		<img src="assets/images/example.jpg" alt="Example Crystal" width="50" height="50">
-		<img src="assets/images/example.jpg" alt="Example Crystal" width="50" height="50">
+	<div class="crystal-div">
+		<img id="crystal-1" class="crystal-btn" src="assets/images/example.jpg" alt="Crystal Button 1">
+		<img id="crystal-2" class="crystal-btn" src="assets/images/example.jpg" alt="Crystal Button 2">
 	</div>
-	<div id="crystal-div">
-		<img src="assets/images/example.jpg" alt="Example Crystal" width="50" height="50">
-		<img src="assets/images/example.jpg" alt="Example Crystal" width="50" height="50">
+	<div class="crystal-div">
+		<img id="crystal-3" class="crystal-btn" src="assets/images/example.jpg" alt="Crystal Button 3">
+		<img id="crystal-4" class="crystal-btn" src="assets/images/example.jpg" alt="Crystal Button 4">
 	</div>
 	
-	<br>
+	<br><br>
 	<div class="text-center">
 	<button type="button" class="btn btn-default" id="refresh-btn">Refresh</button>
 	</div>
@@ -64,6 +65,9 @@
     	</div>
     </footer>
 
+	<!-- jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- My Javascript File -->
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
