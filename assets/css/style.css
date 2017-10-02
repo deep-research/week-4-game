@@ -57,6 +57,7 @@ li {
 	align-items: center;
 	font-size: 110%;
 	white-space: nowrap;
+	margin: 0;
 }
 
 #flex-box {
@@ -69,6 +70,7 @@ li {
 	margin-left: 50px;
 	margin-right: 50px;
 	white-space: nowrap;
+	margin-bottom: 15px;
 }
 
 footer {
@@ -108,4 +110,9 @@ footer {
 #refresh-btn:hover {
 	background-color: darkgrey;
 	cursor: pointer;
+}
+
+#game-text li, #game-data li {
+	/*line-height: 50px;*/
+	margin: 0;
 }

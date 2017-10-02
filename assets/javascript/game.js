@@ -1,4 +1,7 @@
 // Refresh button
+var testVar = '3';
+
+
 $(document).ready(function() {
 
 	// Refresh Button
@@ -89,7 +92,7 @@ $(document).ready(function() {
 			btn3.newNum()
 			btn4.newNum()
 
-			alert("You won!")
+			alert("You win!")
 		}
 		else if (counterNum > targetNum) {
 			lossCount++
