@@ -1,7 +1,3 @@
-// Refresh button
-var testVar = '3';
-
-
 $(document).ready(function() {
 
 	// Refresh Button
